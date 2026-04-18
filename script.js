@@ -1,6 +1,3 @@
-/* MaxFlow interaction layer
-   Edit copy in the translations object. Placeholder contact links live in index.html. */
-
 const STORAGE_KEYS = {
   lang: "maxflow-language",
   theme: "maxflow-theme"
@@ -11,7 +8,6 @@ const translations = {
     "meta.title": "MaxFlow | Премиум уеб дизайн и разработка",
     "meta.description": "MaxFlow създава премиум custom сайтове, лендинг страници и поддръжка с безплатна демо концепция преди покупка.",
     "skip": "Към съдържанието",
-
     "nav.aria": "Основна навигация",
     "nav.menuOpen": "Отвори менюто",
     "nav.menuClose": "Затвори менюто",
@@ -26,18 +22,17 @@ const translations = {
     "theme.aria": "Избор на тема",
     "theme.dark": "Тъмна",
     "theme.light": "Светла",
-
     "hero.eyebrow": "Бутиково уеб присъствие за бизнеси с амбиция",
     "hero.title": "Премиум уебсайт, който продава доверието ви преди първия разговор.",
     "hero.lede": "MaxFlow създава custom сайтове и лендинг страници с луксозен минимализъм, ясна стратегия и фокус върху повече запитвания.",
     "hero.support": "Първо виждате работеща демо посока. Ако усещането е правилно, продължаваме към финален build.",
     "hero.ctaPrimary": "Обади се",
     "hero.ctaSecondary": "Пиши в Instagram",
+    "hero.ctaFacebook": "Пиши във Facebook",
     "hero.pointOne": "Безплатно демо преди покупка",
     "hero.pointTwo": "Custom дизайн",
     "hero.pointThree": "Бързо изпълнение",
     "hero.pointsAria": "Акценти на MaxFlow",
-
     "why.kicker": "Защо MaxFlow",
     "why.title": "Сайтът ви трябва да изглежда като инвестиция, не като разход.",
     "why.intro": "Когато бизнесът ви изглежда уверен онлайн, клиентите по-лесно ви приемат сериозно. MaxFlow комбинира премиум дизайн, ясна структура и директен път към запитване.",
@@ -49,7 +44,6 @@ const translations = {
     "why.cardThreeText": "Работим фокусирано, без тежка бюрокрация и без шаблонни решения, които изглеждат като всички останали.",
     "why.cardFourTitle": "Custom изпълнение",
     "why.cardFourText": "Всяка страница се изгражда около вашата оферта, аудитория и цел, не около готова тема.",
-
     "services.kicker": "Услуги",
     "services.title": "Премиум уеб присъствие, изградено около реална бизнес цел.",
     "services.intro": "Избирате нивото на подкрепа, от което бизнесът ви има нужда сега. Всичко остава ясно, елегантно и лесно за развитие.",
@@ -62,7 +56,6 @@ const translations = {
     "services.maintenanceTitle": "Поддръжка",
     "services.maintenanceText": "Постоянна грижа за съдържание, подобрения, малки промени и стабилно представяне след старта.",
     "services.maintenanceValue": "Бизнес стойност: сайтът остава актуален, чист и готов за следващата ви оферта.",
-
     "process.kicker": "Процес",
     "process.title": "Виждате работеща посока преди да решите дали да купите сайта.",
     "process.intro": "Този подход премахва най-големия риск: не плащате за обещание на сляпо. Първо виждате как MaxFlow може да позиционира бизнеса ви.",
@@ -74,7 +67,6 @@ const translations = {
     "process.stepThreeText": "Ако решите да продължим, изчистваме детайлите, подобряваме съдържанието и прецизираме посоката.",
     "process.stepFourTitle": "Финален build и launch",
     "process.stepFourText": "Изграждаме финалната версия, адаптираме я за всички екрани и подготвяме сайта за реални посетители.",
-
     "showcase.kicker": "Концепции и дизайнерска посока",
     "showcase.title": "Примерни визуални посоки, не измислени клиентски проекти.",
     "showcase.intro": "Докато портфолиото расте, MaxFlow показва реалистични концепции за различни типове бизнеси. Целта е да усетите нивото на мислене, композиция и детайл.",
@@ -88,7 +80,6 @@ const translations = {
     "showcase.cardThreeTitle": "Бутиков hospitality бранд",
     "showcase.cardThreeText": "По-емоционална посока с премиум атмосфера, ясни секции и силен финален CTA.",
     "showcase.cardThreeAlt": "Концептуална посока за бутиков hospitality бранд",
-
     "trust.kicker": "Какво можете да очаквате",
     "trust.title": "Изпълнение за брандове, които искат да изглеждат сериозно онлайн.",
     "trust.text": "Без измислени ревюта, без фалшиви лога и без кухи обещания. Доверието се печели чрез ясно позициониране, силен визуален стандарт и процес, който ви показва посоката преди ангажимент.",
@@ -98,7 +89,6 @@ const translations = {
     "trust.pointTwoText": "Посетителят разбира какво предлагате, за кого е и защо има смисъл да ви пише сега.",
     "trust.pointThreeTitle": "Детайлно усещане",
     "trust.pointThreeText": "Микроинтеракции, ритъм, spacing и responsive поведение работят за усещане за качество.",
-
     "faq.kicker": "FAQ",
     "faq.title": "Ясни отговори преди първия разговор.",
     "faq.qOne": "Как работи безплатното демо?",
@@ -113,7 +103,6 @@ const translations = {
     "faq.aFive": "Да. Можем да поемем актуализации, малки промени, нови секции и ongoing подобрения, така че сайтът да остане свеж и полезен.",
     "faq.qSix": "Как започваме?",
     "faq.aSix": "Изпращате кратко съобщение или запазвате разговор. След това уточняваме целта, аудиторията и първата демо посока.",
-
     "final.kicker": "Готови за по-силен уебсайт?",
     "final.title": "Нека първо ви покажем посока.",
     "final.text": "Започнете с разговор. Ще видите работеща демо концепция преди решение за покупка.",
@@ -121,7 +110,6 @@ const translations = {
     "final.instagram": "Пиши в Instagram",
     "final.facebook": "Пиши във Facebook",
     "final.work": "Работи с нас",
-
     "footer.statement": "Премиум web design и development за бизнеси, които искат да изглеждат уверено, ясно и скъпо онлайн.",
     "footer.contactTitle": "Контакт",
     "footer.phone": "+359 888 412 249",
@@ -137,7 +125,6 @@ const translations = {
     "meta.title": "MaxFlow | Premium Web Design & Development",
     "meta.description": "MaxFlow creates premium custom websites, landing pages, and maintenance workflows with a free demo concept before purchase.",
     "skip": "Skip to content",
-
     "nav.aria": "Primary navigation",
     "nav.menuOpen": "Open menu",
     "nav.menuClose": "Close menu",
@@ -152,18 +139,17 @@ const translations = {
     "theme.aria": "Theme selection",
     "theme.dark": "Dark",
     "theme.light": "Light",
-
     "hero.eyebrow": "Boutique web presence for ambitious businesses",
     "hero.title": "A premium website that sells your credibility before the first call.",
     "hero.lede": "MaxFlow creates custom websites and landing pages with luxury minimalism, clear strategy, and a focus on more inquiries.",
     "hero.support": "You see a working demo direction first. If it feels right, we move into the final build.",
     "hero.ctaPrimary": "Call now",
     "hero.ctaSecondary": "Message on Instagram",
+    "hero.ctaFacebook": "Message on Facebook",
     "hero.pointOne": "Free demo before purchase",
     "hero.pointTwo": "Custom design",
     "hero.pointThree": "Fast execution",
     "hero.pointsAria": "MaxFlow highlights",
-
     "why.kicker": "Why MaxFlow",
     "why.title": "Your website should feel like an investment, not an expense.",
     "why.intro": "When your business looks confident online, customers take you seriously faster. MaxFlow combines premium design, clear structure, and a direct path to inquiry.",
@@ -175,7 +161,6 @@ const translations = {
     "why.cardThreeText": "We move with focus, without heavy bureaucracy and without template decisions that make you look like everyone else.",
     "why.cardFourTitle": "Custom execution",
     "why.cardFourText": "Every page is built around your offer, audience, and goal, not around a ready-made theme.",
-
     "services.kicker": "Services",
     "services.title": "Premium web presence built around a real business goal.",
     "services.intro": "Choose the level of support your business needs now. Everything stays clear, refined, and easy to evolve.",
@@ -188,7 +173,6 @@ const translations = {
     "services.maintenanceTitle": "Maintenance",
     "services.maintenanceText": "Ongoing care for content, improvements, small changes, and stable presentation after launch.",
     "services.maintenanceValue": "Business value: your site stays current, clean, and ready for your next offer.",
-
     "process.kicker": "Process",
     "process.title": "You see a working direction before deciding whether to buy the website.",
     "process.intro": "This removes the biggest risk: you are not paying for a blind promise. First, you see how MaxFlow can position your business.",
@@ -200,7 +184,6 @@ const translations = {
     "process.stepThreeText": "If you decide to move forward, we clarify the details, improve the content, and refine the direction.",
     "process.stepFourTitle": "Final build and launch",
     "process.stepFourText": "We build the final version, adapt it for every screen, and prepare the site for real visitors.",
-
     "showcase.kicker": "Concepts and design direction",
     "showcase.title": "Sample visual directions, not invented client projects.",
     "showcase.intro": "While the portfolio grows, MaxFlow shows realistic concepts for different business types. The goal is to feel the level of thinking, composition, and detail.",
@@ -214,7 +197,6 @@ const translations = {
     "showcase.cardThreeTitle": "Boutique hospitality brand",
     "showcase.cardThreeText": "A more emotional direction with premium atmosphere, clear sections, and a strong final CTA.",
     "showcase.cardThreeAlt": "Concept direction for a boutique hospitality brand",
-
     "trust.kicker": "What to expect",
     "trust.title": "Execution for brands that want to look serious online.",
     "trust.text": "No invented reviews, no fake logos, and no empty promises. Trust is earned through clear positioning, a strong visual standard, and a process that shows you the direction before commitment.",
@@ -224,7 +206,6 @@ const translations = {
     "trust.pointTwoText": "Visitors understand what you offer, who it is for, and why it makes sense to contact you now.",
     "trust.pointThreeTitle": "Detailed feeling",
     "trust.pointThreeText": "Micro-interactions, rhythm, spacing, and responsive behavior work together to create a quality feel.",
-
     "faq.kicker": "FAQ",
     "faq.title": "Clear answers before the first conversation.",
     "faq.qOne": "How does the free demo work?",
@@ -239,7 +220,6 @@ const translations = {
     "faq.aFive": "Yes. We can handle updates, small changes, new sections, and ongoing improvements so the site stays fresh and useful.",
     "faq.qSix": "How do we start?",
     "faq.aSix": "Send a short message or book a call. Then we clarify the goal, audience, and first demo direction.",
-
     "final.kicker": "Ready for a stronger website?",
     "final.title": "Let us show you the direction first.",
     "final.text": "Start with a conversation. You will see a working demo concept before making a purchase decision.",
@@ -247,7 +227,6 @@ const translations = {
     "final.instagram": "Message on Instagram",
     "final.facebook": "Message on Facebook",
     "final.work": "Work with us",
-
     "footer.statement": "Premium web design and development for businesses that want to look confident, clear, and expensive online.",
     "footer.contactTitle": "Contact",
     "footer.phone": "+359 888 412 249",
