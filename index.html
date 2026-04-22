@@ -1,34 +1,31 @@
 <!doctype html>
-<html lang="bg" data-theme="dark">
+<html lang="bg">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="MaxFlow creates premium custom websites, landing pages, and maintenance workflows with a free demo concept before purchase."
+      content="MaxFlow създава премиум уебсайтове по поръчка, лендинг страници и поддръжка с безплатна демо концепция преди покупка."
     />
-    <meta name="theme-color" content="#08080b" data-theme-color />
-    <title>MaxFlow | Premium Web Design & Development</title>
+    <meta name="theme-color" content="#101010" />
+    <title>MaxFlow | Премиум уеб дизайн и разработка</title>
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
     <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
-    <link rel="preload" as="image" href="assets/hero-interface.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <a class="skip-link" href="#main" data-i18n="skip">Към съдържанието</a>
-
-    <div class="cursor-dot" aria-hidden="true"></div>
-    <div class="cursor-ring" aria-hidden="true"></div>
+    <a class="skip-link" href="#main">Към съдържанието</a>
 
     <header class="site-header" data-header>
-      <nav class="nav-shell" data-i18n-attr="aria-label:nav.aria">
-        <a class="brand" href="#home" aria-label="MaxFlow">
-          <span class="brand-mark" aria-hidden="true">
-            <img src="assets/Logo.png" alt="" />
-          </span>
-          <span>MaxFlow</span>
-        </a>
+      <div class="nav-shell">
+        <a class="brand" href="#home" aria-label="Начало на MaxFlow">MaxFlow</a>
 
         <button
           class="menu-toggle"
@@ -36,363 +33,581 @@
           aria-label="Отвори менюто"
           aria-controls="primary-menu"
           aria-expanded="false"
-          title="Отвори менюто"
           data-menu-toggle
-          data-i18n-attr="aria-label:nav.menuOpen;title:nav.menuOpen"
         >
-          <span></span>
-          <span></span>
+          <span>Меню</span>
+          <span class="menu-toggle-lines" aria-hidden="true"></span>
         </button>
 
-        <div class="nav-panel" id="primary-menu" data-nav-panel>
-          <ul class="nav-links">
-            <li><a href="#home" data-i18n="nav.home">Начало</a></li>
-            <li><a href="#why" data-i18n="nav.why">Защо MaxFlow</a></li>
-            <li><a href="#services" data-i18n="nav.services">Услуги</a></li>
-            <li><a href="#process" data-i18n="nav.process">Процес</a></li>
-            <li><a href="#showcase" data-i18n="nav.showcase">Посока</a></li>
-            <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
-          </ul>
+        <nav class="nav-panel" id="primary-menu" aria-label="Основна навигация" data-nav-panel>
+          <a href="#home">Начало</a>
+          <a href="#why">Защо MaxFlow</a>
+          <a href="#services">Услуги</a>
+          <a href="#process">Процес</a>
+          <a href="#showcase">Посока</a>
+          <a href="#faq">Въпроси</a>
+        </nav>
 
-          <div class="nav-actions">
-            <div class="segmented" data-i18n-attr="aria-label:language.aria">
-              <button class="segment active" type="button" data-lang-button data-lang="bg">BG</button>
-              <button class="segment" type="button" data-lang-button data-lang="en">EN</button>
-            </div>
-
-            <div class="segmented theme-segmented" data-i18n-attr="aria-label:theme.aria">
-              <button class="segment active" type="button" data-theme-button data-theme-value="dark" data-i18n="theme.dark">Тъмна</button>
-              <button class="segment" type="button" data-theme-button data-theme-value="light" data-i18n="theme.light">Светла</button>
-            </div>
-
-            <a class="btn btn-small btn-primary" href="tel:+359888412249" data-i18n="nav.cta">Обади се</a>
-          </div>
-        </div>
-      </nav>
+        <a class="nav-cta" href="tel:+359888412249">Обади се</a>
+      </div>
     </header>
 
     <main id="main">
       <section class="hero" id="home" aria-labelledby="hero-title">
-        <img class="hero-art" src="assets/hero-interface.png" alt="" aria-hidden="true" />
-        <div class="hero-sheen" aria-hidden="true"></div>
+        <div class="hero-media" aria-hidden="true"></div>
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-background-word" aria-hidden="true">MaxFlow</div>
 
-        <div class="container hero-inner">
-          <p class="eyebrow reveal" data-i18n="hero.eyebrow">Бутиково уеб присъствие за бизнеси с амбиция</p>
-          <h1 class="reveal" id="hero-title" data-i18n="hero.title">Премиум уебсайт, който продава доверието ви преди първия разговор.</h1>
-          <p class="hero-lede reveal" data-i18n="hero.lede">
-            MaxFlow създава custom сайтове и лендинг страници с луксозен минимализъм, ясна стратегия и фокус върху повече запитвания.
-          </p>
-          <p class="hero-support reveal" data-i18n="hero.support">
-            Първо виждате работеща демо посока. Ако усещането е правилно, продължаваме към финален build.
-          </p>
+        <div class="hero-inner">
+          <div class="hero-copy reveal">
+            <p class="section-label">Бутиково уеб присъствие за амбициозни бизнеси</p>
+            <p class="hero-secondary">Уеб студио</p>
+            <h1 id="hero-title">Премиум уебсайт, който продава доверието ви още преди първия разговор.</h1>
+            <p class="hero-lead">
+              MaxFlow създава уебсайтове по поръчка и лендинг страници с луксозен минимализъм, ясна
+              стратегия и фокус върху повече запитвания.
+            </p>
 
-          <div class="hero-actions reveal">
-            <a class="btn btn-primary" href="tel:+359888412249" data-i18n="hero.ctaPrimary">Обади се</a>
-            <a class="btn btn-secondary" href="https://www.instagram.com/maxflow.official/" target="_blank" rel="noopener noreferrer" data-i18n="hero.ctaSecondary">Пиши в Instagram</a>
-            <a class="btn btn-secondary" href="https://www.facebook.com/profile.php?id=61573255214794" target="_blank" rel="noopener noreferrer" data-i18n="hero.ctaFacebook">Пиши във Facebook</a>
+            <div class="hero-actions">
+              <a class="button button-primary" href="tel:+359888412249">Обади се</a>
+              <a
+                class="button button-secondary"
+                href="https://www.instagram.com/maxflow.official/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Instagram
+              </a>
+              <a
+                class="button button-secondary"
+                href="https://www.facebook.com/profile.php?id=61573255214794"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Facebook
+              </a>
+            </div>
           </div>
 
-          <div class="hero-points reveal" aria-label="Акценти на MaxFlow" data-i18n-attr="aria-label:hero.pointsAria">
-            <span data-i18n="hero.pointOne">Безплатно демо преди покупка</span>
-            <span data-i18n="hero.pointTwo">Custom дизайн</span>
-            <span data-i18n="hero.pointThree">Бързо изпълнение</span>
-          </div>
+          <article class="hero-card reveal" aria-label="Бележка за посоката на MaxFlow">
+            <div class="hero-card-top">
+              <span>Бележка за посоката</span>
+              <span>01</span>
+            </div>
+
+            <div class="hero-card-main">
+              <p class="hero-card-title">Безплатно демо преди ангажимент.</p>
+              <p>
+                Първо виждате работеща демо посока. Ако усещането е правилно, преминаваме към
+                финалната версия.
+              </p>
+            </div>
+
+            <div class="hero-card-points" aria-label="Акценти на MaxFlow">
+              <span>Безплатно демо преди покупка</span>
+              <span>Дизайн по поръчка</span>
+              <span>Бързо изпълнение</span>
+            </div>
+
+            <div class="hero-card-footer">
+              <div>
+                <span class="detail-label">Instagram</span>
+                <a
+                  href="https://www.instagram.com/maxflow.official/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  @maxflow.official
+                </a>
+              </div>
+              <div>
+                <span class="detail-label">Телефон</span>
+                <a href="tel:+359888412249">+359 888 412 249</a>
+              </div>
+            </div>
+          </article>
         </div>
+
+        <div class="hero-orbit" aria-hidden="true">
+          <svg viewBox="0 0 200 200">
+            <defs>
+              <path
+                id="hero-orbit-path"
+                d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0"
+              ></path>
+            </defs>
+            <text>
+              <textPath href="#hero-orbit-path">
+                Безплатно демо първо - MaxFlow Studio - Безплатно демо първо - MaxFlow Studio
+              </textPath>
+            </text>
+          </svg>
+          <span>2026</span>
+        </div>
+
+        <p class="hero-scroll" aria-hidden="true">Скрол</p>
       </section>
 
-      <section class="section" id="why" aria-labelledby="why-title">
-        <div class="container">
+      <section class="section section-light" id="why" aria-labelledby="why-title">
+        <div class="section-shell">
           <div class="section-heading reveal">
-            <p class="section-kicker" data-i18n="why.kicker">Защо MaxFlow</p>
-            <h2 id="why-title" data-i18n="why.title">Сайтът ви трябва да изглежда като инвестиция, не като разход.</h2>
-            <p data-i18n="why.intro">
-              Когато бизнесът ви изглежда уверен онлайн, клиентите по-лесно ви приемат сериозно. MaxFlow комбинира премиум дизайн, ясна структура и директен път към запитване.
+            <p class="section-label">Защо MaxFlow</p>
+            <h2 id="why-title">Сайтът ви трябва да изглежда като инвестиция, не като разход.</h2>
+            <p class="section-intro">
+              Когато бизнесът ви изглежда уверен онлайн, клиентите по-лесно ви приемат сериозно.
+              MaxFlow комбинира премиум дизайн, ясна структура и директен път към запитване.
             </p>
           </div>
 
-          <div class="value-grid">
-            <article class="value-card reveal">
+          <div class="reason-grid">
+            <article class="reason-card reveal">
               <span class="card-index">01</span>
-              <h3 data-i18n="why.cardOneTitle">Първо виждате посока</h3>
-              <p data-i18n="why.cardOneText">Получавате работеща демо концепция преди покупка, за да прецените стила, структурата и усещането.</p>
+              <h3>Първо виждате посоката</h3>
+              <p>
+                Получавате работеща демо концепция преди покупка, за да прецените стила,
+                структурата и цялостното усещане.
+              </p>
             </article>
 
-            <article class="value-card reveal">
+            <article class="reason-card reveal">
               <span class="card-index">02</span>
-              <h3 data-i18n="why.cardTwoTitle">Създадено за доверие</h3>
-              <p data-i18n="why.cardTwoText">Дизайнът не е декор. Той подрежда офертата ви така, че посетителят да разбере защо сте правилният избор.</p>
+              <h3>Създадено за доверие</h3>
+              <p>
+                Дизайнът не е декор. Той подрежда офертата ви така, че посетителят да разбере защо
+                сте правилният избор.
+              </p>
             </article>
 
-            <article class="value-card reveal">
+            <article class="reason-card reveal">
               <span class="card-index">03</span>
-              <h3 data-i18n="why.cardThreeTitle">Бърз и чист процес</h3>
-              <p data-i18n="why.cardThreeText">Работим фокусирано, без тежка бюрокрация и без шаблонни решения, които изглеждат като всички останали.</p>
+              <h3>Бърз и чист процес</h3>
+              <p>
+                Работим фокусирано, без тежка бюрокрация и без шаблонни решения, които ви правят
+                да изглеждате като всички останали.
+              </p>
             </article>
 
-            <article class="value-card reveal">
+            <article class="reason-card reveal">
               <span class="card-index">04</span>
-              <h3 data-i18n="why.cardFourTitle">Custom изпълнение</h3>
-              <p data-i18n="why.cardFourText">Всяка страница се изгражда около вашата оферта, аудитория и цел, не около готова тема.</p>
+              <h3>Изпълнение по поръчка</h3>
+              <p>
+                Всяка страница се изгражда около вашата оферта, аудитория и цел, не около готова
+                тема.
+              </p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section section-contrast" id="services" aria-labelledby="services-title">
-        <div class="container">
-          <div class="section-heading reveal">
-            <p class="section-kicker" data-i18n="services.kicker">Услуги</p>
-            <h2 id="services-title" data-i18n="services.title">Премиум уеб присъствие, изградено около реална бизнес цел.</h2>
-            <p data-i18n="services.intro">Избирате нивото на подкрепа, от което бизнесът ви има нужда сега. Всичко остава ясно, елегантно и лесно за развитие.</p>
+      <section class="section section-dark" id="services" aria-labelledby="services-title">
+        <div class="section-shell split-layout">
+          <div class="split-copy reveal">
+            <p class="section-label">Услуги</p>
+            <h2 id="services-title">Премиум уеб присъствие, изградено около реална бизнес цел.</h2>
+            <p class="section-intro">
+              Избирате нивото на подкрепа, от което бизнесът ви има нужда сега. Всичко остава
+              ясно, елегантно и лесно за развитие.
+            </p>
           </div>
 
-          <div class="services-grid">
-            <article class="service-card reveal">
-              <span class="service-icon" aria-hidden="true"></span>
-              <h3 data-i18n="services.customTitle">Custom уебсайтове</h3>
-              <p data-i18n="services.customText">Цялостен сайт с премиум структура, силна визуална идентичност и път към запитване, който се усеща естествено.</p>
-              <p class="business-value" data-i18n="services.customValue">Бизнес стойност: повече доверие, по-ясна оферта, по-силен първи контакт.</p>
+          <div class="service-stack">
+            <article class="service-panel reveal">
+              <span class="service-index">01</span>
+              <div>
+                <h3>Уебсайтове по поръчка</h3>
+                <p>
+                  Цялостен сайт с премиум структура, силна визуална идентичност и път към
+                  запитване, който се усеща естествено.
+                </p>
+                <p class="service-value">
+                  Бизнес стойност: повече доверие, по-ясна оферта и по-силен първи контакт.
+                </p>
+              </div>
             </article>
 
-            <article class="service-card reveal">
-              <span class="service-icon service-icon-alt" aria-hidden="true"></span>
-              <h3 data-i18n="services.landingTitle">Лендинг страници</h3>
-              <p data-i18n="services.landingText">Фокусирана страница за кампания, услуга или оферта, изградена да води посетителя към конкретно действие.</p>
-              <p class="business-value" data-i18n="services.landingValue">Бизнес стойност: по-малко разсейване, по-добра конверсия, по-лесно тестване.</p>
+            <article class="service-panel reveal">
+              <span class="service-index">02</span>
+              <div>
+                <h3>Лендинг страници</h3>
+                <p>
+                  Фокусирана страница за кампания, услуга или оферта, изградена да води посетителя
+                  към едно ясно действие.
+                </p>
+                <p class="service-value">
+                  Бизнес стойност: по-малко разсейване, по-добра конверсия и по-лесно тестване.
+                </p>
+              </div>
             </article>
 
-            <article class="service-card reveal">
-              <span class="service-icon service-icon-line" aria-hidden="true"></span>
-              <h3 data-i18n="services.maintenanceTitle">Поддръжка</h3>
-              <p data-i18n="services.maintenanceText">Постоянна грижа за съдържание, подобрения, малки промени и стабилно представяне след старта.</p>
-              <p class="business-value" data-i18n="services.maintenanceValue">Бизнес стойност: сайтът остава актуален, чист и готов за следващата ви оферта.</p>
+            <article class="service-panel reveal">
+              <span class="service-index">03</span>
+              <div>
+                <h3>Поддръжка</h3>
+                <p>
+                  Постоянна грижа за съдържание, подобрения, малки промени и стабилно представяне
+                  след старта.
+                </p>
+                <p class="service-value">
+                  Бизнес стойност: сайтът ви остава актуален, чист и готов за следващата ви оферта.
+                </p>
+              </div>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section" id="process" aria-labelledby="process-title">
-        <div class="container">
+      <section class="section section-light" id="process" aria-labelledby="process-title">
+        <div class="section-shell">
           <div class="section-heading reveal">
-            <p class="section-kicker" data-i18n="process.kicker">Процес</p>
-            <h2 id="process-title" data-i18n="process.title">Виждате работеща посока преди да решите дали да купите сайта.</h2>
-            <p data-i18n="process.intro">Този подход премахва най-големия риск: не плащате за обещание на сляпо. Първо виждате как MaxFlow може да позиционира бизнеса ви.</p>
+            <p class="section-label">Процес</p>
+            <h2 id="process-title">Виждате работеща посока, преди да решите дали да купите.</h2>
+            <p class="section-intro">
+              Това премахва най-големия риск: не плащате за сляпо обещание. Първо виждате как
+              MaxFlow може да позиционира бизнеса ви.
+            </p>
           </div>
 
-          <ol class="process-list">
-            <li class="process-step reveal">
-              <span class="step-number">01</span>
-              <div>
-                <h3 data-i18n="process.stepOneTitle">Начален разговор</h3>
-                <p data-i18n="process.stepOneText">Разбираме офертата, аудиторията, целта на сайта и какво трябва да почувства клиентът, когато ви види онлайн.</p>
-              </div>
+          <ol class="process-grid">
+            <li class="process-card reveal">
+              <span class="process-number">01</span>
+              <h3>Начален разговор</h3>
+              <p>
+                Разбираме офертата ви, аудиторията, целта на сайта и какво трябва да почувства
+                клиентът, когато ви открие онлайн.
+              </p>
             </li>
 
-            <li class="process-step reveal">
-              <span class="step-number">02</span>
-              <div>
-                <h3 data-i18n="process.stepTwoTitle">Безплатна демо концепция</h3>
-                <p data-i18n="process.stepTwoText">Подготвяме работеща начална посока с реален визуален език, структура и усещане. Виждате я преди покупка.</p>
-              </div>
+            <li class="process-card reveal">
+              <span class="process-number">02</span>
+              <h3>Безплатна демо концепция</h3>
+              <p>
+                Подготвяме работеща начална посока с реален визуален език, структура и атмосфера.
+                Виждате я преди покупка.
+              </p>
             </li>
 
-            <li class="process-step reveal">
-              <span class="step-number">03</span>
-              <div>
-                <h3 data-i18n="process.stepThreeTitle">Обратна връзка и refinement</h3>
-                <p data-i18n="process.stepThreeText">Ако решите да продължим, изчистваме детайлите, подобряваме съдържанието и прецизираме посоката.</p>
-              </div>
+            <li class="process-card reveal">
+              <span class="process-number">03</span>
+              <h3>Обратна връзка и прецизиране</h3>
+              <p>
+                Ако решите да продължим, изчистваме детайлите, подобряваме съдържанието и
+                прецизираме посоката.
+              </p>
             </li>
 
-            <li class="process-step reveal">
-              <span class="step-number">04</span>
-              <div>
-                <h3 data-i18n="process.stepFourTitle">Финален build и launch</h3>
-                <p data-i18n="process.stepFourText">Изграждаме финалната версия, адаптираме я за всички екрани и подготвяме сайта за реални посетители.</p>
-              </div>
+            <li class="process-card reveal">
+              <span class="process-number">04</span>
+              <h3>Финално изграждане и старт</h3>
+              <p>
+                Изграждаме финалната версия, адаптираме я за всеки екран и подготвяме сайта за
+                реални посетители.
+              </p>
             </li>
           </ol>
         </div>
       </section>
 
-      <section class="section section-contrast showcase-section" id="showcase" aria-labelledby="showcase-title">
-        <div class="container">
-          <div class="section-heading reveal">
-            <p class="section-kicker" data-i18n="showcase.kicker">Концепции и дизайнерска посока</p>
-            <h2 id="showcase-title" data-i18n="showcase.title">Примерни визуални посоки, не измислени клиентски проекти.</h2>
-            <p data-i18n="showcase.intro">Докато портфолиото расте, MaxFlow показва реалистични концепции за различни типове бизнеси. Целта е да усетите нивото на мислене, композиция и детайл.</p>
+      <section class="section section-dark section-showcase" id="showcase" aria-labelledby="showcase-title">
+        <div class="section-shell">
+          <div class="showcase-head reveal">
+            <div class="showcase-copy">
+              <p class="section-label">Концепции и дизайнерска посока</p>
+              <h2 id="showcase-title">Примерни визуални посоки, не измислени клиентски проекти.</h2>
+              <p class="section-intro">
+                Докато портфолиото расте, MaxFlow показва реалистични концепции за различни типове
+                бизнеси. Целта е да усетите нивото на мислене, композиция и детайл.
+              </p>
+            </div>
+
+            <div class="carousel-controls" aria-label="Контроли за карусела">
+              <button class="carousel-button" type="button" aria-label="Предишен слайд" data-carousel-prev>
+                <span aria-hidden="true">&#8592;</span>
+              </button>
+              <button class="carousel-button" type="button" aria-label="Следващ слайд" data-carousel-next>
+                <span aria-hidden="true">&#8594;</span>
+              </button>
+            </div>
           </div>
 
-          <div class="concept-grid">
-            <article class="concept-card reveal">
-              <img src="assets/concept-commerce.png" alt="Концептуална посока за премиум търговски сайт" data-i18n-attr="alt:showcase.cardOneAlt" />
-              <div class="concept-content">
-                <p class="concept-tag" data-i18n="showcase.cardTag">Примерна посока, не клиентски проект</p>
-                <h3 data-i18n="showcase.cardOneTitle">Премиум продуктова марка</h3>
-                <p data-i18n="showcase.cardOneText">Силен първи екран, уверен продуктов ритъм и фокус върху доверие преди продажба.</p>
+          <div class="carousel-track" data-carousel-track>
+            <article class="showcase-card" data-slide>
+              <div
+                class="showcase-media showcase-media-one"
+                role="img"
+                aria-label="Технологична концепция за премиум продуктова марка"
+              ></div>
+              <div class="showcase-body">
+                <p class="showcase-tag">Примерна посока, не клиентски проект</p>
+                <h3>Премиум продуктова марка</h3>
+                <p>
+                  Силен първи екран, уверен продуктов ритъм и фокус върху доверие преди продажбата.
+                </p>
               </div>
             </article>
 
-            <article class="concept-card reveal">
-              <img src="assets/concept-wellness.png" alt="Концептуална посока за wellness и клиника" data-i18n-attr="alt:showcase.cardTwoAlt" />
-              <div class="concept-content">
-                <p class="concept-tag" data-i18n="showcase.cardTag">Примерна посока, не клиентски проект</p>
-                <h3 data-i18n="showcase.cardTwoTitle">Wellness / клиника</h3>
-                <p data-i18n="showcase.cardTwoText">Чисто усещане, спокойна структура и прецизно представяне за услуги с висока стойност.</p>
+            <article class="showcase-card" data-slide>
+              <div
+                class="showcase-media showcase-media-two"
+                role="img"
+                aria-label="Технологична концепция за high-end услуга или SaaS"
+              ></div>
+              <div class="showcase-body">
+                <p class="showcase-tag">Примерна посока, не клиентски проект</p>
+                <h3>Уелнес / клиника</h3>
+                <p>Чисто усещане, спокойна структура и прецизно представяне за услуги с висока стойност.</p>
               </div>
             </article>
 
-            <article class="concept-card reveal">
-              <img src="assets/concept-hospitality.png" alt="Концептуална посока за бутиков hospitality бранд" data-i18n-attr="alt:showcase.cardThreeAlt" />
-              <div class="concept-content">
-                <p class="concept-tag" data-i18n="showcase.cardTag">Примерна посока, не клиентски проект</p>
-                <h3 data-i18n="showcase.cardThreeTitle">Бутиков hospitality бранд</h3>
-                <p data-i18n="showcase.cardThreeText">По-емоционална посока с премиум атмосфера, ясни секции и силен финален CTA.</p>
+            <article class="showcase-card" data-slide>
+              <div
+                class="showcase-media showcase-media-three"
+                role="img"
+                aria-label="Технологична концепция за бутиков дигитален бранд"
+              ></div>
+              <div class="showcase-body">
+                <p class="showcase-tag">Примерна посока, не клиентски проект</p>
+                <h3>Бутиков хотелски бранд</h3>
+                <p>
+                  По-емоционална посока с премиум атмосфера, ясни секции и силен финален призив за действие.
+                </p>
               </div>
             </article>
+          </div>
+
+          <div class="carousel-status reveal" aria-hidden="true">
+            <span class="carousel-count" data-carousel-index>01</span>
+            <span class="carousel-progress">
+              <span data-carousel-progress></span>
+            </span>
+            <span class="carousel-total">03</span>
           </div>
         </div>
       </section>
 
-      <section class="section trust-section" aria-labelledby="trust-title">
-        <div class="container trust-layout">
-          <div class="trust-copy reveal">
-            <p class="section-kicker" data-i18n="trust.kicker">Какво можете да очаквате</p>
-            <h2 id="trust-title" data-i18n="trust.title">Изпълнение за брандове, които искат да изглеждат сериозно онлайн.</h2>
-            <p data-i18n="trust.text">Без измислени ревюта, без фалшиви лога и без кухи обещания. Доверието се печели чрез ясно позициониране, силен визуален стандарт и процес, който ви показва посоката преди ангажимент.</p>
+      <section class="section section-light" aria-labelledby="trust-title">
+        <div class="section-shell detail-layout">
+          <div class="detail-visual reveal">
+            <div
+              class="detail-image"
+              role="img"
+              aria-label="Технологичен детайл от хардуер и компоненти"
+            ></div>
+            <div class="detail-quote">
+              <p>Без фалшиви ревюта.</p>
+              <p>Без измислени казуси.</p>
+              <p>Само ясна премиум посока.</p>
+            </div>
           </div>
 
-          <div class="trust-points">
-            <article class="trust-point reveal">
-              <h3 data-i18n="trust.pointOneTitle">Премиум първо впечатление</h3>
-              <p data-i18n="trust.pointOneText">Сайтът ви трябва да изглежда като бизнес, на който клиентът може да повери парите си.</p>
-            </article>
-            <article class="trust-point reveal">
-              <h3 data-i18n="trust.pointTwoTitle">Ясна оферта</h3>
-              <p data-i18n="trust.pointTwoText">Посетителят разбира какво предлагате, за кого е и защо има смисъл да ви пише сега.</p>
-            </article>
-            <article class="trust-point reveal">
-              <h3 data-i18n="trust.pointThreeTitle">Детайлно усещане</h3>
-              <p data-i18n="trust.pointThreeText">Микроинтеракции, ритъм, spacing и responsive поведение работят за усещане за качество.</p>
-            </article>
+          <div class="detail-copy reveal">
+            <p class="section-label">Какво да очаквате</p>
+            <h2 id="trust-title">Изпълнение за брандове, които искат да изглеждат сериозно онлайн.</h2>
+            <p class="section-intro">
+              Без измислени ревюта, без фалшиви лога и без кухи обещания. Доверието се печели чрез
+              ясно позициониране, силен визуален стандарт и процес, който ви показва посоката
+              преди ангажимент.
+            </p>
+
+            <div class="progress-list">
+              <article class="progress-item">
+                <div class="progress-head">
+                  <h3>Премиум първо впечатление</h3>
+                  <span>92</span>
+                </div>
+                <span class="progress-track"><span class="progress-fill fill-one"></span></span>
+                <p>Сайтът ви трябва да изглежда като бизнес, на който клиентът може да повери парите си.</p>
+              </article>
+
+              <article class="progress-item">
+                <div class="progress-head">
+                  <h3>Ясна оферта</h3>
+                  <span>88</span>
+                </div>
+                <span class="progress-track"><span class="progress-fill fill-two"></span></span>
+                <p>
+                  Посетителят разбира какво предлагате, за кого е и защо има смисъл да ви пише
+                  сега.
+                </p>
+              </article>
+
+              <article class="progress-item">
+                <div class="progress-head">
+                  <h3>Детайлно усещане</h3>
+                  <span>95</span>
+                </div>
+                <span class="progress-track"><span class="progress-fill fill-three"></span></span>
+                <p>
+                  Микроинтеракции, ритъм, spacing и responsive поведение работят за усещане за
+                  качество.
+                </p>
+              </article>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section section-contrast" id="faq" aria-labelledby="faq-title">
-        <div class="container">
-          <div class="section-heading reveal">
-            <p class="section-kicker" data-i18n="faq.kicker">FAQ</p>
-            <h2 id="faq-title" data-i18n="faq.title">Ясни отговори преди първия разговор.</h2>
+      <section class="section section-dark section-faq" id="faq" aria-labelledby="faq-title">
+        <div class="section-shell faq-layout">
+          <div class="faq-copy reveal">
+            <p class="section-label">Въпроси</p>
+            <h2 id="faq-title">Ясни отговори преди първия разговор.</h2>
           </div>
 
           <div class="faq-list">
             <article class="faq-item reveal">
               <button class="faq-question" type="button" aria-expanded="false">
-                <span data-i18n="faq.qOne">Как работи безплатното демо?</span>
+                <span>Как работи безплатното демо?</span>
                 <span class="faq-icon" aria-hidden="true"></span>
               </button>
               <div class="faq-answer">
-                <p data-i18n="faq.aOne">След кратък разговор подготвяме начална работеща посока за сайта. Виждате визията и структурата, преди да решите дали да продължим към финален проект.</p>
+                <p>
+                  След кратък разговор подготвяме начална работеща посока за сайта. Виждате
+                  визията и структурата, преди да решите дали да продължим към пълен проект.
+                </p>
               </div>
             </article>
 
             <article class="faq-item reveal">
               <button class="faq-question" type="button" aria-expanded="false">
-                <span data-i18n="faq.qTwo">Колко време отнема един проект?</span>
+                <span>Колко време отнема един проект?</span>
                 <span class="faq-icon" aria-hidden="true"></span>
               </button>
               <div class="faq-answer">
-                <p data-i18n="faq.aTwo">Срокът зависи от обема, но процесът е създаден за бързо движение. Лендинг страниците обикновено са най-бързи, а по-пълните сайтове изискват повече съдържание и прецизиране.</p>
+                <p>
+                  Срокът зависи от обема, но процесът е създаден за бързо движение. Лендинг
+                  страниците обикновено са най-бързи, а по-пълните сайтове изискват повече
+                  съдържание и прецизиране.
+                </p>
               </div>
             </article>
 
             <article class="faq-item reveal">
               <button class="faq-question" type="button" aria-expanded="false">
-                <span data-i18n="faq.qThree">С какви бизнеси работите?</span>
+                <span>С какви бизнеси работите?</span>
                 <span class="faq-icon" aria-hidden="true"></span>
               </button>
               <div class="faq-answer">
-                <p data-i18n="faq.aThree">MaxFlow е подходящ за услуги, premium local brands, консултанти, клиники, hospitality, e-commerce направления и бизнеси, които искат да изглеждат по-силно онлайн.</p>
+                <p>
+                  MaxFlow е подходящ за услуги, премиум локални брандове, консултанти, клиники,
+                  хотелиерски и e-commerce направления и бизнеси, които искат да изглеждат по-силно
+                  онлайн.
+                </p>
               </div>
             </article>
 
             <article class="faq-item reveal">
               <button class="faq-question" type="button" aria-expanded="false">
-                <span data-i18n="faq.qFour">Сайтът custom ли е?</span>
+                <span>Сайтът по поръчка ли е?</span>
                 <span class="faq-icon" aria-hidden="true"></span>
               </button>
               <div class="faq-answer">
-                <p data-i18n="faq.aFour">Да. Посоката, структурата и интерфейсът се създават около вашата оферта. Не разчитаме на готов шаблонен вид.</p>
+                <p>
+                  Да. Посоката, структурата и интерфейсът се създават около вашата оферта. Не
+                  разчитаме на готов шаблонен вид.
+                </p>
               </div>
             </article>
 
             <article class="faq-item reveal">
               <button class="faq-question" type="button" aria-expanded="false">
-                <span data-i18n="faq.qFive">Предлагате ли поддръжка?</span>
+                <span>Предлагате ли поддръжка?</span>
                 <span class="faq-icon" aria-hidden="true"></span>
               </button>
               <div class="faq-answer">
-                <p data-i18n="faq.aFive">Да. Можем да поемем актуализации, малки промени, нови секции и ongoing подобрения, така че сайтът да остане свеж и полезен.</p>
+                <p>
+                  Да. Можем да поемем актуализации, малки промени, нови секции и постоянни подобрения,
+                  така че сайтът да остане свеж и полезен.
+                </p>
               </div>
             </article>
 
             <article class="faq-item reveal">
               <button class="faq-question" type="button" aria-expanded="false">
-                <span data-i18n="faq.qSix">Как започваме?</span>
+                <span>Как започваме?</span>
                 <span class="faq-icon" aria-hidden="true"></span>
               </button>
               <div class="faq-answer">
-                <p data-i18n="faq.aSix">Изпращате кратко съобщение или запазвате разговор. След това уточняваме целта, аудиторията и първата демо посока.</p>
+                <p>
+                  Изпращате кратко съобщение или запазвате разговор. След това уточняваме целта,
+                  аудиторията и първата демо посока.
+                </p>
               </div>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="final-cta" aria-labelledby="final-title">
-        <div class="container final-cta-inner reveal">
-          <p class="section-kicker" data-i18n="final.kicker">Готови за по-силен уебсайт?</p>
-          <h2 id="final-title" data-i18n="final.title">Нека първо ви покажем посока.</h2>
-          <p data-i18n="final.text">Започнете с разговор. Ще видите работеща демо концепция преди решение за покупка.</p>
+      <section class="section section-light final-cta" id="contact" aria-labelledby="contact-title">
+        <div class="section-shell final-layout">
+          <div class="final-copy reveal">
+            <p class="section-label">Готови за по-силен уебсайт?</p>
+            <h2 id="contact-title">Нека първо ви покажем посоката.</h2>
+            <p class="section-intro">
+              Започнете с разговор. Ще видите работеща демо концепция преди решение за покупка.
+            </p>
+          </div>
 
-          <div class="final-actions">
-            <a class="btn btn-primary" href="tel:+359888412249" data-i18n="final.call">Обади се</a>
-            <a class="btn btn-secondary" href="https://www.instagram.com/maxflow.official/" target="_blank" rel="noopener noreferrer" data-i18n="final.instagram">Пиши в Instagram</a>
-            <a class="btn btn-secondary" href="https://www.facebook.com/profile.php?id=61573255214794" target="_blank" rel="noopener noreferrer" data-i18n="final.facebook">Пиши във Facebook</a>
+          <div class="final-panel reveal">
+            <div class="final-row">
+              <span class="detail-label">Обаждане</span>
+              <a href="tel:+359888412249">+359 888 412 249</a>
+            </div>
+            <div class="final-row">
+              <span class="detail-label">Instagram</span>
+              <a
+                href="https://www.instagram.com/maxflow.official/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                maxflow.official
+              </a>
+            </div>
+            <div class="final-row">
+              <span class="detail-label">Facebook</span>
+              <a
+                href="https://www.facebook.com/profile.php?id=61573255214794"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Отвори профила
+              </a>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer" id="contact">
-      <div class="container footer-grid">
+    <footer class="site-footer">
+      <div class="section-shell footer-shell">
         <div>
-          <a class="brand footer-brand" href="#home" aria-label="MaxFlow">
-            <span class="brand-mark" aria-hidden="true">
-              <img src="assets/Logo.png" alt="" />
-            </span>
-            <span>MaxFlow</span>
-          </a>
-          <p class="footer-statement" data-i18n="footer.statement">Премиум web design и development за бизнеси, които искат да изглеждат уверено, ясно и скъпо онлайн.</p>
+          <a class="brand brand-inverse" href="#home">MaxFlow</a>
+          <p class="footer-statement">
+            Премиум уеб дизайн и разработка за бизнеси, които искат да изглеждат уверено, ясно и
+            скъпо онлайн.
+          </p>
         </div>
 
-        <div class="footer-contact">
-          <h2 data-i18n="footer.contactTitle">Контакт</h2>
-          <a href="tel:+359888412249" data-i18n="footer.phone">+359 888 412 249</a>
-          <a href="https://www.instagram.com/maxflow.official/" target="_blank" rel="noopener noreferrer" data-i18n="footer.instagram">Instagram</a>
-          <a href="https://www.facebook.com/profile.php?id=61573255214794" target="_blank" rel="noopener noreferrer" data-i18n="footer.facebook">Facebook</a>
+        <div class="footer-links">
+          <a href="#why">Защо MaxFlow</a>
+          <a href="#services">Услуги</a>
+          <a href="#process">Процес</a>
+          <a href="#showcase">Посока</a>
+          <a href="#faq">Въпроси</a>
         </div>
 
-        <div class="footer-note">
-          <h2 data-i18n="footer.noteTitle">Първата стъпка е лека.</h2>
-          <p data-i18n="footer.noteText">Пишете с кратко описание на бизнеса и целта. Ще получите честна посока за следващия ход.</p>
+        <div class="footer-copy-block">
+          <p class="footer-note">Първата стъпка е лека.</p>
+          <p class="footer-small">
+            Изпратете кратко описание на бизнеса и целта. Ще получите честна посока за следващия
+            ход.
+          </p>
         </div>
       </div>
 
-      <div class="container footer-bottom">
-        <p data-i18n="footer.rights">© 2026 MaxFlow. Всички права запазени.</p>
-        <p data-i18n="footer.truth">Без фалшиви ревюта. Без измислени case studies. Само ясна premium посока.</p>
+      <div class="section-shell footer-bottom">
+        <p>© 2026 MaxFlow. Всички права запазени.</p>
+        <p>Без фалшиви ревюта. Без измислени казуси. Само ясна премиум посока.</p>
       </div>
     </footer>
 
